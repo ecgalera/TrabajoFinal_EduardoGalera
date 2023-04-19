@@ -1,0 +1,42 @@
+[
+	{
+		"title": "galleta",
+		"description": "pan blanco",
+		"thumnail": "foto",
+		"code": 1322,
+		"price": 567,
+		"status": true,
+		"category": "almacen",
+		"id": 1
+	},
+	{
+		"title": "galleta",
+		"description": "pan blanco",
+		"thumnail": "foto",
+		"code": 22,
+		"price": 567,
+		"status": true,
+		"category": "almacen",
+		"id": 3
+	},
+	{
+		"title": "galleta",
+		"description": "pan blanco",
+		"thumnail": "foto",
+		"code": 122,
+		"price": 67,
+		"status": true,
+		"category": "almacen",
+		"id": 4
+	},
+	{
+		"title": "galleta",
+		"description": "pan blanco",
+		"thumnail": "foto",
+		"code": 1212,
+		"price": 67,
+		"status": true,
+		"category": "almacen",
+		"id": 5
+	}
+]
