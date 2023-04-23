@@ -18,7 +18,7 @@ router.get("/", async(req, res)=>{
 })
 
 router.get("/:id", async (req, res)=>{
-    // console.log(req.params.id);
+    
     res.send(await pm.getProductById(parseInt(req.params.id)))
 
 })
@@ -32,9 +32,17 @@ router.post("/", uploads.single("image"), async(req, res)=>{
 router.delete("/:id" , async(req, res)=>{
 //    const product = await pm.getProducts()
     const id = parseInt(req.params.id);
-    console.log(id);
+    
     await pm.deleteProduct(id)
     res.send({status: "success" , message: "Product delete"})
 })
+
+router.put("/:id", async(req, res)=>{
+    const productId = req.params.id;
+    const change = req.body
+  
+    await pm.updateProduct(productId, change)
+    res.send({status: "success" , message: "Product change"})
+});
 
 export default router;

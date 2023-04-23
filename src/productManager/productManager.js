@@ -74,12 +74,11 @@ export default class ProductsManager {
     console.log(id, elem);
     try {
       const products = await this.getProducts();
-
       const newProduct = products.map((p) =>
         p.id == id ? { ...p, ...elem } : p
       );
 
-      fs.promises.writeFile(this.path, JSON.stringify(newProduct, null, "\t"));
+     await fs.promises.writeFile(this.path, JSON.stringify(newProduct, null, "\t"));
     } catch (error) {
       console.log(error);
     }
@@ -91,7 +90,7 @@ export default class ProductsManager {
     const products = await this.getProducts();
     console.log(products);
     const productIndex = products.findIndex(u => u.id === did)
-    console.log(productIndex);
+    // console.log(productIndex);
     products.splice(productIndex, 1);
     await fs.promises.writeFile(this.path, JSON.stringify(products, null, "\t"));
   };

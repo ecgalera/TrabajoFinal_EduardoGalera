@@ -20,17 +20,7 @@
 		"id": 3
 	},
 	{
-		"title": "galleta",
-		"description": "pan blanco",
-		"thumnail": "foto",
-		"code": 122,
-		"price": 67,
-		"status": true,
-		"category": "almacen",
-		"id": 4
-	},
-	{
-		"title": "galleta",
+		"title": "cambio",
 		"description": "pan blanco",
 		"thumnail": "foto",
 		"code": 1212,
